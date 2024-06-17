@@ -3,6 +3,7 @@ var rule = {
   host: 'http://www.ardvd.com',
   url: '/lanmu/fyclass_fypage.html',
   searchUrl: '/search.php#searchword=**;post',
+  cate_exclude:'伦理',
   searchable: 2,
   quickSearch: 0,
   filterable: 0,

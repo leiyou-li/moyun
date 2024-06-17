@@ -1,8 +1,11 @@
+Object.assign(muban.mxpro.二级,{
+    tab_text:'div--small&&text',
+});
 var rule = {
-  title: '虾酱追剧',
-  host: 'https://www.xiajiangzj.top',
-  url: '/vod/show/id/fyclass/fypage.html',
-  searchUrl: '/vod/search//page/fypage/wd/**.html',
+  title: '奈飞影视',
+  host: 'https://www.naifei.in/',
+  url: '/vod/show/fyclass--------fypage---.html',
+  searchUrl: '/vod/search/**----------fypage---.html',
   searchable: 2,
   quickSearch: 0,
   filterable: 0,
