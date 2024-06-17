@@ -5,6 +5,7 @@
 	"spider": "./jar/pg.jar?md5=7633f8ea346c082b7aa163be58aed023",
     "spider": "./fty.jar;md5;dd909349c70fe92e82470eba611b7094",
     "spider":"./ou.jar;md5;774a1d1c41442a76bf8d25593d35df1c",
+"spider":"./moyun.jar;",
 
     "warningText":"墨韵提示:
             软件为众筹服务器 
