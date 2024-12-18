@@ -1,9 +1,8 @@
-
 var rule = {
-    title: '一曲肝肠断',
-    host: 'https://fly.daoran.tv',主机：“https：//fly.daoran.tv”
-    url: '/API_ROP/search/album/screen',URL：'/API_ROP/search/album/screen'
-    headers: {   标题:{
+    title: '戏曲',
+    host: 'https://fly.daoran.tv',
+    url: '/API_ROP/search/album/screen',
+    headers: {
         'User-Agent': 'okhttp/3.12.10',
         'Connection': 'Keep-Alive',
         'Accept-Encoding': 'gzip',
@@ -32,14 +31,14 @@ var rule = {
 
     }),
     一级: $js.toString(() => {
-        let d = [];   令d = []；
+        let d = [];
         let tid = MY_CATE
         let pg = MY_PAGE
-        let data = JSON.stringify({让数据等于JSON.stringify({
+        let data = JSON.stringify({
             "cur": pg,
             "free": 0,//0 全部，1 免费，2，会员
             "orderby": "hot",
-            "pageSize": 3000,   “页大小”:3000年,
+            "pageSize": 3000,
             "resType": 1,
             "sect": tid,
             "tagId": 0,
@@ -50,7 +49,7 @@ var rule = {
             "project": "lyhxcx"
         });
         let html = post(input, {headers: rule.headers, body: data});
-        log(html)   日志(html)
+        log(html)
         let list = JSON.parse(html).pb.dataList;
         list.forEach(it => {
             let id = 'https://zheshiyitaiojialianjie.com?' + it.code
@@ -68,67 +67,57 @@ var rule = {
         let code = input.split('?')[1];
         let data = JSON.stringify({
             "albumCode": code,
-            "cur": 1,   “大海”:1,
-            "pageSize": 100,   “页大小”:100年,
+            "cur": 1,
+            "pageSize": 100,
             "userId": "d4b29595b6fe764e09078a0dad7352ff",
-            "channel"   “通道”: "oppo",
-            "item": "y9",   “项”:“今年上半年”,
+            "channel": "oppo",
+            "item": "y9",
             "nodeCode": "001000",
             "project": "lyhxcx"
         });
-        let html = post('https://fly.daoran.tv/API_ROP/album/res/list', {headers: rule.headers, body: data});让 `html` 等于向 `https：//fly.daoran.tv/API_ROP/album/res/list` 发送 POST 请求，并带有以下首部和主体：
-
-首部：`rule.headers`
-主体：`data`
-
-请注意，`rule.headers` 和 `data` 是需要由您提供的变量或对象。
-        log(html)   日志(html)
-        let list = JSON.parse(html).pb.dataList;让 `list` 变量等于 JSON.parse(html) 函数的返回值，该函数将 HTML 字符串解析为 JavaScript 对象。然后，将该对象传递给 PB.dataList 函数，以创建一个数据列表。
-        list.forEach(it => {   数组 `list` 中的每个元素都会被遍历，并执行 `it => { }` 中的代码。
-            urls.push   推(it.name   名字 + '$' + 'https://zheshiyitaiojialianjie.com?' + it.code);urls.push   推(it.name   名字   '$'   'https://zheshiyitaiojialianjie.com?'   it.code);
+        let html = post('https://fly.daoran.tv/API_ROP/album/res/list', {headers: rule.headers, body: data});
+        log(html)
+        let list = JSON.parse(html).pb.dataList;
+        list.forEach(it => {
+            urls.push(it.name + '$' + 'https://zheshiyitaiojialianjie.com?' + it.code);
         })
         VOD = {
             vod_pic: 'https://img0.baidu.com/it/u=4079405848,3806507810&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=750',
             vod_play_from: '球球啦',
-            vod_play_url: urls.join   加入('#')vod\_play\_url: urls.join   加入('#') 的中文翻译是：“vod\_play\_url： 将urls.join   加入('#')连接起来。”
+            vod_play_url: urls.join('#')
         };
     }),
 
     搜索: $js.toString(() => {
-        let d = []   令d = []
-        let pg = MY_PAGE   让pg = MY_PAGE
-        let key = KEY   let key = key
-        let data = JSON.stringify({让数据等于JSON.stringify({
-            "cur": 1,   “大海”:1,
-            "free": 0,   “免费”:0,
-            "keyword": key,   “关键词”:钥匙,
+        let d = []
+        let pg = MY_PAGE
+        let key = KEY
+        let data = JSON.stringify({
+            "cur": 1,
+            "free": 0,
+            "keyword": key,
             "nodeCode": "001000",
             "orderby": "hot",
-            "pageSize": 200,   “页大小”:200年,
+            "pageSize": 200,
             "project": "lyhxcx",
-            "px": 2,   “px”:2“px”： 2, "px": 2
-            "sect": [],   “教派”:[],
-            "userId": "d4b29595b6fe764e09078a0dad7352ff"用户标识:“d4b29595b6fe764e09078a0dad7352ff "
+            "px": 2,
+            "sect": [],
+            "userId": "d4b29595b6fe764e09078a0dad7352ff"
         });
-        let html = post(input, {headers: rule.headers, body: data});让 `html` 等于向 `input` 发送 POST 请求，并带有以下头信息和请求体：
-
-* `headers`： `rule.headers`
-* `body`： `data`   * ' body ': ‘ data ’
-
-其中，`input` 是一个输入元素，`post` 是发送 POST 请求的函数，`rule.headers` 是一个对象，包含请求的头信息，`data` 是请求体。
-        log(html)   日志(html)
-        let list = JSON.parse(html).pb.dataList;让 `list` 变量等于 JSON.parse(html) 函数的返回值，该函数将 HTML 字符串解析为 JavaScript 对象。然后，将该对象传递给 PB.dataList 函数，以创建一个数据列表。
-        list.forEach(it => {   数组 `list` 中的每个元素都会被遍历，并执行 `it => { }` 中的代码。
-            let id = 'https://zheshiyitaiojialianjie.com?' + it.code让 id 等于 "https：//zheshiyitaiojialianjie.com?" 并执行 it.code
-            d.push   推({
-                url: id,   url: id、Url: id, Url: id，
-                title: it.name   名字,   标题:it.name   名字,
-                img: 'https://img0.baidu.com/it/u=4079405848,3806507810&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=750',图像地址：`https：//img0.baidu.com/it/u=4079405848,3806
-                desc: it.des,   描述:it.des,
+        let html = post(input, {headers: rule.headers, body: data});
+        log(html)
+        let list = JSON.parse(html).pb.dataList;
+        list.forEach(it => {
+            let id = 'https://zheshiyitaiojialianjie.com?' + it.code
+            d.push({
+                url: id,
+                title: it.name,
+                img: 'https://img0.baidu.com/it/u=4079405848,3806507810&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=750',
+                desc: it.des,
             })
         })
         setResult(d);
     }),
     double: false, // 推荐内容是否双层定
-    searchUrl: '/API_ROP/search/album/list',搜索URL：'/API_ROP/search/album/list'
+    searchUrl: '/API_ROP/search/album/list',
 }
