@@ -1,70 +1,68 @@
 {
-  "spider": "./ou.jar;md5;dd909349c70fe92e82470eba611b7094",
 "warningText":"墨韵提示:
   接口免费提供 
-  请大家珍惜",
-  "wallpaper": "https://深色壁纸.xxooo.cf/",
+  请大家珍惜"
   "sites": [
-{"key": "戏曲","name": "墨韵戏曲","type": 3,"api": "./drpy_libs/drpy2.min.js","searchable": 1,"quickSearch": 1,"filterable": 1,"order_num": 58,"ext": "./drpy_js/戏曲.js"}
+{"key": "戏曲","name"   “名称”: "墨韵戏曲","type": 3,"api": "./drpy_libs/drpy2.min.js","searchable": 1,"quickSearch": 1,"filterable": 1,"order_num": 58,"ext": "./drpy_js/戏曲.js"}
 ],
 "parses":
-	[{"name":"-聚合-","type":3,"url":"Demo"},
-{"name":"-解析-","type":0,"url":"https://jx.aidouer.net/?url=","ext":{"header":{"user-agent":"Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36","referer":"https://jiejie.uk/"}}},
-{"name":"-解析1-","type":0,"url":"https://jx.quankan.app/?url=","ext":{"header":{"user-agent":"Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"}}},
-{"name":"-解析2-","type":0,"url":"https://jx.m3u8.pw/?url="},
-{"name":"-解析3-","type":0,"url":"https://jx.jsonplayer.com/player/?url=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒芒","letv","乐视","pptv","PPTV","sohu","bilibili","哔哩哔哩","哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}}},
-{"name":"-谢谢-","type":0,"url":"https://jx.xyflv.cc/?url=","ext":{"header":{"user-agent":"Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36","referer":"https://www.xyflv.cc/"}}}
+	[{"name"   “名称”:"-聚合-","type":3,"url"   “url”:"Demo"},
+{"name"   “名称”:"-解析-","type":0,"url"   “url”:"https://jx.aidouer.net/?url=","ext":{"header":{"user-agent":"Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36","referer":"https://jiejie.uk/"}}},
+{"name"   “名称”:"-解析1-","type":0,"url"   “url”:"https://jx.quankan.app/?url=","ext":{"header":{"user-agent":"Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"}}},
+{"name"   “名称”:"-解析2-","type":0,"url"   “url”:"https://jx.m3u8.pw/?url="},
+{"name"   “名称”:"-解析3-","type":0,"url"   “url”:"https://jx.jsonplayer.com/player/?url=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒芒","letv","乐视","pptv","PPTV","sohu","bilibili","哔哩哔哩","哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}}},
+{"name"   “名称”:"-谢谢-","type":0,"url"   “url”:"https://jx.xyflv.cc/?url=","ext":{"header":{"user-agent":"Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36","referer":"https://www.xyflv.cc/"}}}
 ],
 
 "rules":
-    [{"name":"量子广告","hosts":["vip.lz","hd.lz",".cdnlz"],"regex":["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY","#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"]},
-	{"name":"非凡广告","hosts":["vip.ffzy","hd.ffzy"],"regex":["20.52","#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.400000,[\\s\\S]*?#EXT-X-DISCONTINUITY","#EXTINF.*?\\s+.*?1170(20|32).*?\\.ts\\s+","#EXTINF.*?\\s+.*?116977.*?\\.ts\\s+"]},
-	{"name":"索尼广告","hosts":["suonizy"],"regex":["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:1\\.000000,[\\s\\S]*?#EXT-X-DISCONTINUITY","#EXTINF.*?\\s+.*?p1ayer.*?\\.ts\\s+","#EXTINF.*?\\s+.*?\\/video\\/original.*?\\.ts\\s+"]},
-	{"name":"暴风广告","hosts":["bfzy","bfbfvip"],"regex":["#EXTINF.*?\\s+.*?adjump.*?\\.ts\\s+"]},
-	{"name":"星星广告","hosts":["aws.ulivetv.net"],"regex":["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8,[\\s\\S]*?#EXT-X-DISCONTINUITY"]},
-	{"name":"快看广告","hosts":["kuaikan"],"regex":["#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY","#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:2\\.4,[\\s\\S]*?#EXT-X-DISCONTINUITY"]},
-	{"name":"一起看广告","hosts":["yqk88"],"regex":["18.4","15.1666","16.5333","#EXT-X-DISCONTINUITY\\r*\\n*[\\s\\S]*?#EXT-X-CUE-IN"]},
-	{"name":"火山嗅探","hosts":["huoshan.com"],"regex":["item_id="]},
-	{"name":"抖音嗅探","hosts":["douyin.com"],"regex":["is_play_url="]},
-	{"name":"proxy","hosts":["raw.githubusercontent.com","googlevideo.com","cdn.v82u1l.com","cdn.iz8qkg.com","cdn.kin6c1.com","c.biggggg.com","c.olddddd.com","haiwaikan.com","www.histar.tv","youtube.com","uhibo.com",".*boku.*",".*nivod.*","*.t4tv.hz.cz",".*ulivetv.*"]},
-	{"name":"AI","hosts":[".ffzy",".cdnlz",".lz","yzzy",".bfeng",".kuaikan","leshiyun","y2.ylbf",".hdzyk",".wxys",".ikzybf",".daayee",".fentvoss"],"rules":[{"regexp":"AI"}],"toLog":1},将“名字”:“AI”、“hosts”:“.ffzy”、“.cdnlz”、“.lz”、“yzzy”、“.bfeng”、“.kuaikan”、“leshiyun”、“y2.ylbf”、“.hdzyk”、“.wxys”、“.ikzybf”、“.daayee”、“.fentvoss”]“rules”:{“regexp”:“AI”]“toLog”:1,……
-	{"name":"农民嗅探","hosts":["toutiaovod.com"],"regex":["video/tos/cn"]}],
+    [{"name"   “名称”:"量子广告","hosts":["vip.lz","hd.lz",".cdnlz"],"regex":["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY","#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"]},
+	{"name"   “名称”:"非凡广告","hosts":["vip.ffzy","hd.ffzy"],"regex":["20.52","#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.400000,[\\s\\S]*?#EXT-X-DISCONTINUITY","#EXTINF.*?\\s+.*?1170(20|32).*?\\.ts\\s+","#EXTINF.*?\\s+.*?116977.*?\\.ts\\s+"]},
+	{"name"   “名称”:"索尼广告","hosts":["suonizy"],"regex":["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:1\\.000000,[\\s\\S]*?#EXT-X-DISCONTINUITY","#EXTINF.*?\\s+.*?p1ayer.*?\\.ts\\s+","#EXTINF.*?\\s+.*?\\/video\\/original.*?\\.ts\\s+"]},
+	{"name"   “名称”:"暴风广告","hosts":["bfzy","bfbfvip"],"regex":["#EXTINF.*?\\s+.*?adjump.*?\\.ts\\s+"]},
+	{"name"   “名称”:"星星广告","hosts":["aws.ulivetv.net"],"regex":["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8,[\\s\\S]*?#EXT-X-DISCONTINUITY"]},
+	{"name"   “名称”:"快看广告","hosts":["kuaikan"],"regex":["#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY","#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:2\\.4,[\\s\\S]*?#EXT-X-DISCONTINUITY"]},
+	{"name"   “名称”:"一起看广告","hosts":["yqk88"],"regex":["18.4","15.1666","16.5333","#EXT-X-DISCONTINUITY\\r*\\n*[\\s\\S]*?#EXT-X-CUE-IN"]},
+	{"name"   “名称”:"火山嗅探","hosts":["huoshan.com"],"regex":["item_id="]},
+	{"name"   “名称”:"抖音嗅探","hosts":["douyin.com"],"regex":["is_play_url="]},
+	{"name"   “名称”:"proxy","hosts":["raw.githubusercontent.com","googlevideo.com","cdn.v82u1l.com","cdn.iz8qkg.com","cdn.kin6c1.com","c.biggggg.com","c.olddddd.com","haiwaikan.com","www.histar.tv","youtube.com","uhibo.com",".*boku.*",".*nivod.*","*.t4tv.hz.cz",".*ulivetv.*"]},
+	{"name"   “名称”:"AI","hosts":[".ffzy",".cdnlz",".lz","yzzy",".bfeng",".kuaikan","leshiyun","y2.ylbf",".hdzyk",".wxys",".ikzybf",".daayee",".fentvoss"],"rules":[{"regexp":"AI"}],"toLog":1},将“名字”:“AI”、“hosts”:“.ffzy”、“.cdnlz”、“.lz”、“yzzy”、“.bfeng”、“.kuaikan”、“leshiyun”、“y2.ylbf”、“.hdzyk”、“.wxys”、“.ikzybf”、“.daayee”、“.fentvoss”]“rules”:{“regexp”:“AI”]“toLog”:1,……
+	{"name"   “名称”:"农民嗅探","hosts":["toutiaovod.com"],"regex":["video/tos/cn"]}],
 	
 "doh":   “doh”:
-	[{"name":"Google","url":"https://dns.google/dns-query","ips":["8.8.4.4","8.8.8.8"]},谷歌公司，网址：，IP地址：<8.8.4.4> 和 <8.8.8.8>
-	{"name":"Cloudflare","url":"https://cloudflare-dns.com/dns-query","ips":["1.1.1.1","1.0.0.1","2606:4700:4700::1111","2606:4700:4700::1001"]},名称：Cloudflare
+	[{"name"   “名称”:"Google","url"   “url”:"https://dns.google/dns-query","ips":["8.8.4.4","8.8.8.8"]},谷歌公司，网址：，IP地址：<8.8.4.4> 和 <8.8.8.8>
+	{"name":"Cloudflare","url"   “url”:"https://cloudflare-dns.com/dns-query","ips":["1.1.1.1","1.0.0.1","2606:4700:4700::1111","2606:4700:4700::1001"]},名称：Cloudflare
 网址：
 IP地址：1.1.1.1、1.0.0.1、2606:4700:4700：：1111、2606:4700:4700：：1001
-	{"name":"AdGuard","url":"https://dns.adguard.com/dns-query","ips":["94.140.14.140","94.140.14.141"]},名称：AdGuard，网址：https：//dns.adguard.com/dns-query，IP地址：94.140.14.140和94.140.14.141
-	{"name":"DNSWatch","url":"https://resolver2.dns.watch/dns-query","ips":["84.200.69.80","84.200.70.40"]},它的名称是“DNSWatch”，网址是“https：//resolver2.dns.watch/dns-query”，它使用的IP地址是“84.200.69.80”和“84.200.70.40”。
-	{"name":"Quad9","url":"https://dns.quad9.net/dns-quer","ips":["9.9.9.9","149.112.112.112"]}],[{"名称"："Quad9"，"网址"："https：//dns.quad9.net/dns-quer"，"IP地址"：["9.9.9.9"，"149.112.121.11212"]}]
+	{"name"   “名称”:"AdGuard","url"   “url”:"https://dns.adguard.com/dns-query","ips":["94.140.14.140","94.140.14.141"]},名称：AdGuard，网址：https：//dns.adguard.com/dns-query，IP地址：94.140.14.140和94.140.14.141
+	{"name"   “名称”:"DNSWatch","url"   “url”:"https://resolver2.dns.watch/dns-query","ips":["84.200.69.80","84.200.70.40"]},它的名称是“DNSWatch”，网址是“https：//resolver2.dns.watch/dns-query”，它使用的IP地址是“84.200.69.80”和“84.200.70.40”。
+	{"name"   “名称”:"Quad9","url"   “url”:"https://dns.quad9.net/dns-quer","ips":["9.9.9.9","149.112.112.112"]}],[{"名称"："Quad9"，"网址"："https：//dns.quad9.net/dns-quer"，"IP地址"：["9.9.9.9"，"149.112.121.11212"]}]
 
 "flags":   “旗帜”:
 	["youku","优酷","优 酷","优酷视频","qq","腾讯","腾 讯","腾讯视频","iqiyi","qiyi","奇艺","爱奇艺","爱 奇 艺","m1905","xigua","letv","leshi","乐视","乐 视","sohu","搜狐","搜 狐","搜狐视频","tudou","pptv","mgtv","芒果","imgo","芒果TV","芒 果 T V","bilibili","哔 哩","哔 哩 哔 哩"],
 "ijk":   “缓冲”:
 	[{"group":"软解码","options":
-		[{"category":4,"name":"opensles","value":"0"},类别4：OpenSLES
+		[{"category"   “类别”:4,"name"   “名称”:"opensles","value"   “价值”:"0"},类别4：OpenSLES
 名称：OpenSLES
 值：0
-		{"category":4,"name":"overlay-format","value":"842225234"},类别：4，名称：覆盖格式，值：842225234。
-		{"category":4,"name":"framedrop","value":"1"},{"类别"：4，"名称"："帧下降"，"值"：1}
-		{"category":4,"name":"soundtouch","value":"1"},{"类别"：4，"名称"："SoundTouch"，"值"：1}
-		{"category":4,"name":"start-on-prepared","value":"1"},{"类别"：4，"名称"："在准备状态下开始"，"值"：1}
-		{"category":1,"name":"http-detect-range-support","value":"0"},{"类别"：1，"名称"："http-detect-range-support"，"值"：0}
-		{"category":1,"name":"fflags","value":"fastseek"},类别：1，名称：fflags，值：fastseek
-		{"category":2,"name":"skip_loop_filter","value":"48"},类别编号：2
+		{"category"   “类别”:4,"name"   “名称”:"overlay-format","value"   “价值”:"842225234"},类别：4，名称：覆盖格式，值：842225234。
+		{"category"   “类别”:4,"name"   “名称”:"framedrop","value"   “价值”:"1"},{"类别"：4，"名称"："帧下降"，"值"：1}
+		{"category"   “类别”:4,"name"   “名称”:"soundtouch","value"   “价值”:"1"},{"类别"：4，"名称"："SoundTouch"，"值"：1}
+		{"category"   “类别”:4,"name"   “名称”:"start-on-prepared","value"   “价值”:"1"},{"类别"：4，"名称"："在准备状态下开始"，"值"：1}
+		{"category"   “类别”:1,"name"   “名称”:"http-detect-range-support","value"   “价值”:"0"},{"类别"：1，"名称"："http-detect-range-support"，"值"：0}
+		{"category"   “类别”:1,"name"   “名称”:"fflags","value"   “价值”:"fastseek"},类别：1，名称：fflags，值：fastseek
+		{"category"   “类别”:2,"name"   “名称”:"skip_loop_filter","value"   “价值”:"48"},类别编号：2
 名称：跳循环过滤器
 值：48
-		{"category":4,"name":"reconnect","value":"1"},{"类别"：4，"名称"："重连"，"值"：1}
-		{"category":4,"name":"max-buffer-size","value":"5242880"},类别：4
+		{"category"   “类别”:4,"name"   “名称”:"reconnect","value"   “价值”:"1"},{"类别"：4，"名称"："重连"，"值"：1}
+		{"category"   “类别”:4,"name"   “名称”:"max-buffer-size","value"   “价值”:"5242880"},类别：4
 名称：最大缓冲区大小
 值：5242880
-		{"category":4,"name":"enable-accurate-seek","value":"0"},{"类别"：4，"名称"："启用精确寻址"，"值"："0"}
-		{"category":4,"name":"mediacodec","value":"0"},{"类别"：4，"名称"："媒体编解码器"，"值"："0"}
-		{"category":4,"name":"mediacodec-auto-rotate","value":"0"},{"类别"：4，"名称"："媒体编码器自动旋转"，"值"："0"}
-		{"category":4,"name":"mediacodec-handle-resolution-change","value":"0"},{"类别"：4，"名称"："mediacodec-处理分辨率变化"，"值"："0"}
-		{"category":4,"name":"mediacodec-hevc","value":"0"},{"类别"：4，"名称"："媒体编解码器-HEVC"，"值"："0"}
-		{"category":1,"name":"dns_cache_timeout","value":"600000000"}]},{"类别"：1，"名称"："dns\_cache\_timeout"，"值"："600000000"}]}
+		{"category"   “类别”:4,"name"   “名称”:"enable-accurate-seek","value"   “价值”:"0"},{"类别"：4，"名称"："启用精确寻址"，"值"："0"}
+		{"category"   “类别”:4,"name"   “名称”:"mediacodec","value"   “价值”:"0"},{"类别"：4，"名称"："媒体编解码器"，"值"："0"}
+		{"category"   “类别”:4,"name"   “名称”:"mediacodec-auto-rotate","value"   “价值”:"0"},{"类别"：4，"名称"："媒体编码器自动旋转"，"值"："0"}
+		{"category"   “类别”:4,"name"   “名称”:"mediacodec-handle-resolution-change","value"   “价值”:"0"},{"类别"：4，"名称"："mediacodec-处理分辨率变化"，"值"："0"}
+		{"category"   “类别”:4,"name"   “名称”:"mediacodec-hevc","value"   “价值”:"0"},{"类别"：4，"名称"："媒体编解码器-HEVC"，"值"："0"}
+		{"category"   “类别”:1,"name"   “名称”:"dns_cache_timeout"   “dns_cache_timeout”,"value"   “价值”:"600000000"}]},{"类别"：1，"名称"："dns\_cache\_timeout"，"值"："600000000"}]}
 	{"group":"硬解码","options":
 		[{"category":4,"name":"opensles","value":"0"},类别4：OpenSLES
 名称：OpenSLES
