@@ -4,30 +4,17 @@
   接口免费提供 
   请大家珍惜",
   "wallpaper": "https://深色壁纸.xxooo.cf/",
-  "lives":[
-{"name":"墨韵直播","type":0,"url":"https://github.moeyy.xyz/https://raw.githubusercontent.com/leiyou-li/gengxin/main/leiyou.json","playerType":1,"ua": "okhttp/3.12.13","logo": "https://live.fanmingming.com/tv/{name}.png"},
-{"name":"IPV4V6","type":0,"url":"./tv/1/","playerType":1,"ua": "okhttp/3.12.13","logo": "https://live.fanmingming.com/tv/{name}.png"}],
 
   "sites": [
-{"key": "hipy_js_星辰","name": "墨韵📺星辰","type": 3,"api": "./drpy_libs/drpy2.min.js","searchable": 1,"quickSearch": 1,"filterable": 1,"order_num": 58,"ext": "./drpy_js/戏曲.js"},
-{"key": "hipy_js_哈皮影视筛选加密","name": "墨韵📺谷主哈皮","type": 3,"api": "./drpy_libs/drpy2.min.js","searchable": 1,"quickSearch": 1,"filterable": 1,"order_num": 37,"ext": "./drpy_js/哈皮影视筛选加密.js"},
-{"key": "hipy_js_剧圈圈","name": "墨韵📺剧圈圈","type": 3,"api": "./drpy_libs/drpy2.min.js","searchable": 1,"quickSearch": 1,"filterable": 1,"order_num": 23,"ext": "./drpy_js/剧圈圈.js"},
-{"key": "hipy_js_4k剧院","name": "墨韵📺4k剧院","type": 3,"api": "./drpy_libs/drpy2.min.js","searchable": 1,"quickSearch": 1,"filterable": 1,"order_num": 3,"ext": "./drpy_js/4k剧院.js"},
-{"key": "hipy_js_掌心世界","name": "墨韵📺掌心世界","type": 3,"api": "./drpy_libs/drpy2.min.js","searchable": 1,"quickSearch": 1,"filterable": 1,"order_num": 50,"ext": "./drpy_js/掌心世界.js"},
-{"key": "唐人街影视","name": "墨韵📺唐人街","type": 3,"api": "./drpy_libs/drpy2.min.js","searchable": 1,"quickSearch": 1,"filterable": 1,"order_num": 110,"ext": "./drpy_js/唐人街影视.js"},
-{"key": "白胡子影视","name": "墨韵📺白胡子","type": 3,"api": "./drpy_libs/drpy2.min.js","searchable": 1,"quickSearch": 1,"filterable": 1,"order_num": 110,"ext": "./drpy_js/白胡子影院.js"},
-{"key": "八哥","name": "墨韵📺八戈影视","type": 3,"api": "./drpy_libs/drpy2.min.js","searchable": 1,"quickSearch": 1,"filterable": 1,"order_num": 110,"ext": "./drpy_js/八哥网.js"},
-{"key": "墨韵📺奈飞","name": "墨韵📺奈飞","type": 3,"api": "./drpy_libs/drpy2.min.js","searchable": 1,"quickSearch": 1,"filterable": 1,"order_num": 110,"ext": "./drpy_js/奈飞影视m.js"},
-{ "key": "hipy_js_vidhub", "name": "墨韵📺Vidhub","type": 3, "api": "./drpy_libs/drpy2.min.js","searchable": 1,"quickSearch": 1, "filterable": 1,"order_num": 120, "ext": "./drpy_js/Vidhub视频库.js" },
-{"key": "hipy_js_黑木耳资源[资]","name": "墨韵📺黑木耳资源","type": 3,"api": "./drpy_libs/drpy2.min.js","searchable": 1,"quickSearch": 1,"filterable": 1,"order_num": 119,"ext": "./drpy_js/黑木耳资源站.js"}
+{"key": "墨韵戏曲","name": "墨韵戏曲","type": 3,"api": "./drpy_libs/drpy2.min.js","searchable": 1,"quickSearch": 1,"filterable": 1,"order_num": 58,"ext": "./drpy_js/戏曲.js"}
 ],
 "parses":
 	[{"name":"-聚合-","type":3,"url":"Demo"},
-{"name":"-关注-","type":0,"url":"https://jx.aidouer.net/?url=","ext":{"header":{"user-agent":"Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36","referer":"https://jiejie.uk/"}}},
-{"name":"-欧歌-","type":0,"url":"https://jx.quankan.app/?url=","ext":{"header":{"user-agent":"Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"}}},
-{"name":"-公众号-","type":0,"url":"https://jx.m3u8.pw/?url="},
-{"name":"-欧歌APP-","type":0,"url":"https://jx.jsonplayer.com/player/?url=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒芒","letv","乐视","pptv","PPTV","sohu","bilibili","哔哩哔哩","哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}}},
-{"name":"-谢谢-","type":0,"url":"https://jx.xyflv.cc/?url=","ext":{"header":{"user-agent":"Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36","referer":"https://www.xyflv.cc/"}}}
+{"name":"-解析1-","type":0,"url":"https://jx.aidouer.net/?url=","ext":{"header":{"user-agent":"Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36","referer":"https://jiejie.uk/"}}},
+{"name":"-解析2-","type":0,"url":"https://jx.quankan.app/?url=","ext":{"header":{"user-agent":"Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"}}},
+{"name":"-解析3-","type":0,"url":"https://jx.m3u8.pw/?url="},
+{"name":"-解析4-","type":0,"url":"https://jx.jsonplayer.com/player/?url=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒芒","letv","乐视","pptv","PPTV","sohu","bilibili","哔哩哔哩","哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}}},
+{"name":"-解析5-","type":0,"url":"https://jx.xyflv.cc/?url=","ext":{"header":{"user-agent":"Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36","referer":"https://www.xyflv.cc/"}}}
 ],
 
 "rules":
