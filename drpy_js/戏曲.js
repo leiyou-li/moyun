@@ -1,5 +1,5 @@
 var rule = {
-    title: '戏曲',
+    title: '一曲肝肠断',
     host: 'https://fly.daoran.tv',
     url: '/API_ROP/search/album/screen',
     headers: {
@@ -83,7 +83,7 @@ var rule = {
         })
         VOD = {
             vod_pic: 'https://img0.baidu.com/it/u=4079405848,3806507810&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=750',
-            vod_play_from: '球球啦',
+            vod_play_from: '墨韵戏曲',
             vod_play_url: urls.join('#')
         };
     }),
