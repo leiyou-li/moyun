@@ -6,7 +6,8 @@
   "wallpaper": "https://深色壁纸.xxooo.cf/",
 
   "sites": [
-{"key": "墨韵戏曲","name": "墨韵戏曲","type": 3,"api": "./drpy_libs/drpy2.min.js","searchable": 1,"quickSearch": 1,"filterable": 1,"order_num": 58,"ext": "./drpy_js/戏曲.js"}
+{"key": "墨韵戏曲","name": "墨韵戏曲","type": 3,"api": "./drpy_libs/drpy2.min.js","searchable": 1,"quickSearch": 1,"filterable": 1,"order_num": 58,"ext": "./drpy_js/戏曲.js"},
+{"key": "墨韵雷电","name": "墨韵雷电","type": 3,"api": "./drpy_libs/drpy2.min.js","searchable": 1,"quickSearch": 1,"filterable": 1,"order_num": 58,"ext": "./drpy_js/雷电秒播.js"}
 ],
 "parses":
 	[{"name":"-聚合-","type":3,"url":"Demo"},
